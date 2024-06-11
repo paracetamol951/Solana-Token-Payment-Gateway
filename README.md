@@ -8,18 +8,23 @@ This token will then use callbacks (HTTP webhook) in order to notify you about p
 This allows a different method for implementing Solana based payments, with html form or link, and HTTP webhook, that is very easy to integrate into PHP, ASP, JAVA, Ruby projects.
 Different projects will already benefit from this token, such as businesses with point of sale software, or community delivery platform, online games, ...
 
-With the Solana cryptocurrency technology, it becomes possible to use cryptocurrencies as a payment method for a daily use. The network processes the transactions very quickly and the fees are very low. It is now possible to use cryptocurrencies in order to pay a very small amount, in an efficient way, with very little waiting time, and without the heavy calculation that Bitcoin relies on. A whole new set of applications becomes possible ! 
+# Demo
+
+You can view an example of a payment page here :
+
+https://pay.net-assembly.com/Pay/FPnfgC9ppJP9qbDyL2E5ZfDuvHuabec2XFfKufawP6p4/1/1/USD/Pay%20now/PARAM
+
+# How to install on any website
 
 You first need to register your webhook on the Neta Token homepage :
-https://crypto.net-assembly.com
+[Net-Assembly Token payment gateway](https://crypto.net-assembly.com)
 
 When the form is submitted, you will get a webhook secret password you need to save in order to secure HTTP webhook notifications, and a webhook ID.
 
 You will get also :
-
-    HTML code of a payment form, to embed in your website
-    A link that leads to a payment form, you can send by email
-    A QRcode that your clients can scan to pay you
+- HTML code of a payment form, to embed in your website
+- A link that leads to a payment form, you can send by email
+- A QRcode that your clients can scan to pay you
 
 You can receive payment notification by email and on an notification URL (webhook).
 You can customize the amount, the title of the order, and provide an optionnal parameter that will be transmitted with the webhook and email notifications, just replace the parameter 'PARAM'.
@@ -29,7 +34,8 @@ The payment URL is quite simple, and must respect the format :
 
     https://pay.net-assembly.com/Pay/[walletID]/[requestedAmount]/[webHookID]/[EUR or USD]/[Optionnal title for the order]/[OptionnalParameter]/
 
-Payment notification webhook format
+# Payment notification webhook
+
 If you specified a webhook, a HTTP request will be made on payment on the URL you provided.
 The data will be sent as a JSON encoded BODY of an HTTP request with the parameters :
 
@@ -41,12 +47,7 @@ The data will be sent as a JSON encoded BODY of an HTTP request with the paramet
     trx : the transaction ID
     secret : your secret key
 
-# Demo
-
-You can view an example of a payment page here :
-https://pay.net-assembly.com/Pay/FPnfgC9ppJP9qbDyL2E5ZfDuvHuabec2XFfKufawP6p4/1/1/USD/Pay%20now/PARAM
-
 # Net-assembly Token
 
 More info on Net-assembly Token can be found here :
-https://crypto.net-assembly.com
+[Net-Assembly Token payment gateway](https://crypto.net-assembly.com)

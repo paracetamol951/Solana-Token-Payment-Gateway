@@ -40,3 +40,13 @@ The data will be sent as a JSON encoded BODY of an HTTP request with the paramet
     USD_Amount : the amount in USD
     trx : the transaction ID
     secret : your secret key
+
+# Demo
+
+You can view an example of a payment page here :
+https://pay.net-assembly.com/Pay/FPnfgC9ppJP9qbDyL2E5ZfDuvHuabec2XFfKufawP6p4/1/1/USD/Pay%20now/PARAM
+
+# Net-assembly Token
+
+More info on Net-assembly Token can be found here :
+https://crypto.net-assembly.com

@@ -12,7 +12,7 @@ Different projects will already benefit from this token, such as businesses with
 
 You can view an example of a payment page here :
 
-https://pay.net-assembly.com/Pay/FPnfgC9ppJP9qbDyL2E5ZfDuvHuabec2XFfKufawP6p4/1/1/USD/Pay%20now/PARAM
+https://pay.net-assembly.com/Pay/FPnfgC9ppJP9qbDyL2E5ZfDuvHuabec2XFfKufawP6p4/1/46/USD/Pay%20now/PARAM
 
 # How to install on any website
 

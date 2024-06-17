@@ -1,12 +1,13 @@
 # Solana-Token-Payment-Gateway
-Process Solana Net-assembly Token payments and setup Solana webhook for payment notifications. HTML payment form to embed into website, payment QRcode, or payment link.
+Process Solana Net-assembly Token payments and setup Solana webhook for payment notifications. 
 
- Net-assembly token is a cryptographic token on Solana blockchain meant to provide a variety of payment features to the community.
+HTML payment form to embed into website, payment QRcode, or payment link.
+
+ Net-assembly token on Solana blockchain is meant to provide a variety of payment features to the community.
 With this token, you can easily integrate Solana based payment forms in your website, application, or point of sale.
 Payments can be requested with a payment url, or a form, or a QRcode.
 This token will then use callbacks (HTTP webhook) in order to notify you about payments.
 This allows a different method for implementing Solana based payments, with html form or link, and HTTP webhook, that is very easy to integrate into PHP, ASP, JAVA, Ruby projects.
-Different projects will already benefit from this token, such as businesses with point of sale software, or community delivery platform, online games, ...
 
 # Demo
 

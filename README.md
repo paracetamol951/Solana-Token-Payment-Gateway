@@ -1,13 +1,13 @@
 # Solana-Token-Payment-Gateway
-Process Solana Net-assembly Token payments and setup Solana webhook for payment notifications. 
+Process Solana Token payments and setup Solana webhook for payment notifications. 
 
 HTML payment form to embed into website, payment QRcode, or payment link.
 
- Net-assembly token on Solana blockchain is meant to provide a variety of payment features to the community.
-With this token, you can easily integrate Solana based payment forms in your website, application, or point of sale.
+ Net-assembly gateway is meant to provide a variety of payment features to the community.
+With this platform, you can easily integrate Solana SPL-Token based payment forms in your website, application, or point of sale.
 Payments can be requested with a payment url, or a form, or a QRcode.
-This token will then use callbacks (HTTP webhook) in order to notify you about payments.
-This allows a different method for implementing Solana based payments, with html form or link, and HTTP webhook, that is very easy to integrate into PHP, ASP, JAVA, Ruby projects.
+This gateway will then use callbacks (HTTP webhook) in order to notify you about payments.
+This allows a different method for implementing Solana SPL-Token based payments, with html form or link, and HTTP webhook, that is very easy to integrate into PHP, ASP, JAVA, Ruby projects.
 
 # Demo
 
@@ -20,6 +20,7 @@ https://pay.net-assembly.com/Pay/FPnfgC9ppJP9qbDyL2E5ZfDuvHuabec2XFfKufawP6p4/1/
 You first need to register your webhook on the Neta Token homepage :
 [Net-Assembly Token payment gateway](https://crypto.net-assembly.com)
 
+You need to provide your wallet, the currency you want to provide amount in (EUR / USD) and the mint of the SPL-Tokens you want to accept.
 When the form is submitted, you will get a webhook secret password you need to save in order to secure HTTP webhook notifications, and a webhook ID.
 
 You will get also :
@@ -42,9 +43,11 @@ The data will be sent as a JSON encoded BODY of an HTTP request with the paramet
 
     myParam : the parameter you provided in the payment link or form
     sourcePayment : the wallet address of the payer
-    paidAmountInNeta : the amount paid in NETA token
-    EUR_Amount : the amount in euros
-    USD_Amount : the amount in USD
+    paidAmountInToken : the amount paid in token (bigint)
+    paidAmountInTokenUi : the amount paid in token user readable
+    tokenUsedForPayment : the mint address of token used for payment
+    EUR_Amount : the amount paid converted in euros
+    USD_Amount : the amount paid converted in USD
     trx : the transaction ID
     secret : your secret key
 

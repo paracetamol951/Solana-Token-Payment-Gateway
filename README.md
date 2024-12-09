@@ -1,4 +1,4 @@
-# Solana-Token-Payment-Gateway
+# Solana-Payment-Links
 Process Solana Token payments and setup Solana webhook for payment notifications. 
 
 HTML payment form to embed into website, payment QRcode, or payment link.
@@ -7,18 +7,19 @@ HTML payment form to embed into website, payment QRcode, or payment link.
 With this platform, you can easily integrate Solana SPL-Token based payment forms in your website, application, or point of sale.
 Payments can be requested with a payment url, or a form, or a QRcode.
 This gateway will then use callbacks (HTTP webhook) in order to notify you about payments.
-This allows a different method for implementing Solana SPL-Token based payments, with html form or link, and HTTP webhook, that is very easy to integrate into PHP, ASP, JAVA, Ruby projects.
+P-Links can also connect with IFTTT, Make, or Zapier using our RSS p-link
+This allows a different method for implementing Solana SPL-Token based payments, with simple links, and HTTP webhook, that is very easy to integrate into PHP, ASP, JAVA, Ruby projects.
 
 # Demo
 
 You can view an example of a payment page here :
 
-https://pay.net-assembly.com/Pay/FPnfgC9ppJP9qbDyL2E5ZfDuvHuabec2XFfKufawP6p4/1/46/USD/Pay%20now/PARAM
+https://p-link.io/Pay/FPnfgC9ppJP9qbDyL2E5ZfDuvHuabec2XFfKufawP6p4/1/46/USD/Pay%20now/PARAM
 
 # How to install on any website
 
 You first need to register your webhook on the Neta Token homepage :
-[Net-Assembly Token payment gateway](https://crypto.net-assembly.com)
+[Payment links | P-Link.io](https://p-link.io)
 
 You need to provide your wallet, the currency you want to provide amount in (EUR / USD) and the mint of the SPL-Tokens you want to accept.
 When the form is submitted, you will get a webhook secret password you need to save in order to secure HTTP webhook notifications, and a webhook ID.
@@ -34,7 +35,7 @@ If you implemented our payment gateway and would like to be featured in the part
 
 The payment URL is quite simple, and must respect the format :
 
-    https://pay.net-assembly.com/Pay/[walletID]/[requestedAmount]/[webHookID]/[EUR or USD]/[Optionnal title for the order]/[OptionnalParameter]/
+    https://p-link.io/Pay/[walletID]/[requestedAmount]/[webHookID]/[EUR or USD]/[Optionnal title for the order]/[OptionnalParameter]/
 
 # Payment notification webhook
 
